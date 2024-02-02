@@ -1,0 +1,11 @@
+header {
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(149, 91, 100);
+    margin: auto;
+    /* background-image: src(./); */
+}
+
+li {
+  display:inline-block;  
+}
