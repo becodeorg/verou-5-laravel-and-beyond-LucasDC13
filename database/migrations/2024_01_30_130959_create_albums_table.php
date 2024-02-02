@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('title');
-            $table->timestamp('released');
+            $table->year('released');
             $table->string('artist');
             $table->string('genre');
             $table->string('imgUrl');
