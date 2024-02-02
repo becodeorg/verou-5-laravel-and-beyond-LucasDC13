@@ -8,6 +8,6 @@
 </head>
 <body>
 @include('__partials.header')
-    <h3>Rad homepage content that gets every visitor excited</h3>
+    <h3>Excited to see you again! Drop your sensitive information so we can log you in.</h3>
 </body>
 </html>

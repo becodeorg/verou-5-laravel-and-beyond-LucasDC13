@@ -8,6 +8,6 @@
 </head>
 <body>
 @include('__partials.header')
-    <h3>Rad homepage content that gets every visitor excited</h3>
+    <h3>Welcome to Fiddle! Please enter your VISA and social security numbers, and we'll get you started.</h3>
 </body>
 </html>

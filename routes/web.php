@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AlbumController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,18 +18,12 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index'])->name("home");
 
-// Route::get('/', function () {
-//     return view('index');
-// });
+Route::get('/users/login', [UserController::class, 'login'])->name("user-login");
 
-Route::get('/id/List', function () {
-    return view('mylist');
-});
+Route::get('/users/create', [UserController::class, 'create'])->name("user-create");
 
-Route::get('/login', function () {
-    return view('login');
-});
+Route::post('/users', [UserController::class, 'store'])->name("user-store");
 
-Route::get('/create', function () {
-    return view('createaccount');
-});
+Route::resource('/albums', AlbumController::class);
+
+Route::get('/users/albums', [AlbumController::class, 'myAlbums'])->name("my-albums");

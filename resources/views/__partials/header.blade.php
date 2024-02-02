@@ -4,9 +4,10 @@
         <nav>
             <ul>
                 <li><a href="{{ route('home') }}"> Home </a></li>
-                <li><a href="/<?='id'?>/List"> My List </a></li>
-                <li><a href="/login/"> Log In </a></li>
-                <li><a href="/create/"> Create account </a></li>
+                <li><a href="{{ route('albums.index') }}"> All Albums </a></li>
+                <li><a href="{{ route('my-albums') }}"> My Albums </a></li>
+                <li><a href="{{ route('user-login') }}"> Log In </a></li>
+                <li><a href="{{ route('user-create') }}"> Create account </a></li>
             </ul>
         </nav>
 </header>
